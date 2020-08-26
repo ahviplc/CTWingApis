@@ -13,7 +13,7 @@ import (
 func f1() {
 	// CreateCommand(appKey string, appSecret string, MasterKey string , body string) (*http.Response, error)
 	appKey := "HhjQH0WKysa"
-	appSecret := "3Fh1pLc9Pu"
+	appSecret := "###"
 	MasterKey := "098fd4875ec54d3e957999b22b27ecfb"
 
 	bodyTmp := make(map[string]interface{})
@@ -75,7 +75,7 @@ func f2() {
 	fmt.Println("buf body json = ", string(buf))
 
 	// CreateCommand(appKey string, appSecret string, MasterKey string , body string) (*http.Response, error)
-	resp, err := aepapi.CreateCommand("HhjQH0WKysa", "3Fh1pLc9Pu", "098fd4875ec54d3e957999b22b27ecfb", string(buf))
+	resp, err := aepapi.CreateCommand("HhjQH0WKysa", "###", "098fd4875ec54d3e957999b22b27ecfb", string(buf))
 
 	if err != nil {
 		fmt.Println("CreateCommand err:", err)
